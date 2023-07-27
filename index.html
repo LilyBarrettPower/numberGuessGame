@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">"
+    <title>Number Guessing Game</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js"></script>
+    </head>
+    <body>
+        <h1>Number guessing game</h1>
+
+        <p>We have chosen a number between 1 and 100. <br> Guess what number we have chosen.<br>
+        You get 10 tries.</p>
+
+        <div class="form">
+            <label for="guessField">Enter a guess: </label>
+            <input type="number" min="1" max="100" required id="guessField" class="guessField">
+            <input type="submit" value="Submit guess" class="submitGuess">
+        </div>
+
+        <!--The div here is used to select all the children when it comes to resetting the game-->
+        <div class="resultParas">
+            <p class="guesses"></p>
+            <p class="lastResult"></p>
+            <p class="lowOrHi"></p>
+        </div>
+    </body>
+</html>
